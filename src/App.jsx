@@ -1,16 +1,24 @@
 
-import Background_Video from "./component/Background_Video";
-import ImmersiveTool from "./component/ImmersiveTool";
-import Navbar from "./component/Navbar";
-import ScrollingLogos from "./component/ScrollingLogos";
+// App.jsx
+import { useState, useEffect } from "react";
+import HomePage from "./component/home/HomePage";
+import Loader from "./component/loader/Loader";
 
 function App() {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 4000);
+
+        // ✅ Proper cleanup for setTimeout
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
-            <Navbar />
-            <Background_Video />
-            <ScrollingLogos />
-            <ImmersiveTool /> 
+            {isLoading ? <Loader /> : <HomePage />}
         </>
     );
 }

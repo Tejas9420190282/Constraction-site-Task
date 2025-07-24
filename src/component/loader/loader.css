@@ -1,0 +1,61 @@
+
+
+/* loader.css */
+.loader-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main animated text */
+.viewr-title {
+  font-size: 3rem;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.viewr-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: riseIn 0.6s ease forwards;
+}
+
+@keyframes riseIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtitle */
+.viewr-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  opacity: 0;
+  animation: fadeInSubtitle 1.2s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInSubtitle {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .viewr-title {
+    font-size: 2rem;
+  }
+  .viewr-subtitle {
+    font-size: 0.85rem;
+  }
+}
