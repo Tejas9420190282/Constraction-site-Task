@@ -1,7 +1,7 @@
 
 // Loader.jsx
 import React from "react";
-import "./Loader.css";
+import "./loader.css";
 
 const Loader = () => {
   return (
