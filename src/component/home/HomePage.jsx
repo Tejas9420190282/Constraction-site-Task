@@ -4,16 +4,17 @@
 import React from 'react'
 import Navbar from './Navbar'
 import ScrollingLogos from './ScrollingLogos'
-import ImmersiveTool from './ImmersiveTool'
 import Background_Video from './Background_Video'
+import Vision from './Vision'
 
 function HomePage() {
     return (
         <>
             <Navbar />
             <Background_Video/>
-            <ScrollingLogos />
-            <ImmersiveTool /> 
+            <ScrollingLogos /> 
+            
+            <Vision />
         </>
     )
 }
