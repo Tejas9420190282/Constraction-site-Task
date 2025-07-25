@@ -67,7 +67,7 @@ const Vision = () => {
       {/* 🔲 Foreground Content */}
       <div className="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6 py-12">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight ">
             From Vision to Virtual
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl font-light">

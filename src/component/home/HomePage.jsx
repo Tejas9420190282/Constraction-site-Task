@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import ScrollingLogos from './ScrollingLogos'
 import Background_Video from './Background_Video'
 import Vision from './Vision'
+import Sellout from './Sellout'
 
 function HomePage() {
     return (
@@ -15,6 +16,8 @@ function HomePage() {
             <ScrollingLogos /> 
             
             <Vision />
+
+            <Sellout />
         </>
     )
 }
