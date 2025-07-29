@@ -1,9 +1,8 @@
 
-
 // ScrollingLogos.jsx
 
-// ScrollingLogos.jsx
 import React from "react";
+import "./ScrollingLogos.css"; // ✅ Custom keyframes here
 
 const logos = [
   "/logos/logo1.png",
@@ -26,13 +25,13 @@ const logos = [
 
 const ScrollingLogos = () => {
   return (
-    <div className="bg-white py-12 h-60 px-6 md:px-12 rounded-b-4xl overflow-hidden mx-5 ">
-      <h2 className="text-center text-xl md:text-2xl font-semibold text-gray-700 mb-8">
+    <div className="bg-white py-12 px-4 sm:px-6 md:px-12 overflow-hidden">
+      <h2 className="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-8">
         Trusted by 220+ Builders
       </h2>
 
-      <div className="relative overflow-hidden mt-10">
-        <div className="flex w-max animate-scroll space-x-12">
+      <div className="relative w-full overflow-hidden">
+        <div className="flex animate-logoScroll space-x-12 w-max">
           {[...logos, ...logos].map((logo, index) => (
             <img
               key={index}

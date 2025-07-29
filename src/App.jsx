@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import HomePage from "./component/home/HomePage";
 import Loader from "./component/loader/Loader";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -15,6 +17,8 @@ function App() {
         // ✅ Proper cleanup for setTimeout
         return () => clearTimeout(timer);
     }, []);
+
+    
 
     return (
         <>

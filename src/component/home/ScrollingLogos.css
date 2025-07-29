@@ -1,0 +1,18 @@
+
+/* ScrollingLogos.css */
+
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-logoScroll {
+  animation: logoScroll 20s linear infinite;
+}
+
+
+

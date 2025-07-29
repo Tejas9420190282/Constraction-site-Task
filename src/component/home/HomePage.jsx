@@ -6,7 +6,15 @@ import Navbar from './Navbar'
 import ScrollingLogos from './ScrollingLogos'
 import Background_Video from './Background_Video'
 import Vision from './Vision'
-import Sellout from './Sellout'
+
+import { Timeline } from "../../component/ui/Timeline";
+
+
+
+import launchTimelineData from '../../data/launchTimelineData'
+import Post_Launch_Line_Data from './Post_Launch_Line_Data'
+import { PostTimeLine } from '../ui/PostTimeLine'
+
 
 function HomePage() {
     return (
@@ -15,9 +23,11 @@ function HomePage() {
             <Background_Video/>
             <ScrollingLogos /> 
             
-            <Vision />
+            <Vision />          
 
-            <Sellout />
+            <Timeline data={launchTimelineData} />
+
+            <PostTimeLine data={Post_Launch_Line_Data} />
         </>
     )
 }
