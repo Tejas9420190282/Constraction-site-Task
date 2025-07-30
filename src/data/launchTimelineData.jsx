@@ -4,6 +4,7 @@
 const launchTimelineData = [
     {
         title: "FOUNDATION & VISION",
+        image : "/images/vision.jpg",
         content: (
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm">
                 <li>Market & competitor research</li>
@@ -14,6 +15,7 @@ const launchTimelineData = [
     },
     {
         title: "BRAND BUILDING & DIGITAL SETUP",
+        image : "/images/digita_setu.jpg",
         content: (
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm">
                 <li>Website design & development</li>
@@ -27,6 +29,7 @@ const launchTimelineData = [
     },
     {
         title: "SOFT LAUNCH & INTEREST GENERATION",
+        image : "/images/interest-generation.png",
         content: (
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm">
                 <li> Expression of Interest (EOI) campaigns</li>
@@ -38,6 +41,7 @@ const launchTimelineData = [
     },
     {
         title: "MARKETING INTENSIFIATION",
+        image : "/images/marketting.jpg",
         content: (
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm">
                 <li> Full funnel advertising (Google, Meta, LinkedIn)</li>
